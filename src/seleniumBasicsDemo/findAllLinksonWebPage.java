@@ -11,8 +11,10 @@ public class findAllLinksonWebPage {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver", "C:\\driver\\geckodriver-v0.20\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
+		
 		driver.get("http://www.wikipedia.org/");
-		WebElement block = driver.findElement(By.xpath("//*[@id='www-wikipedia-org']/div[6]"));		
+		WebElement block = driver.findElement(By.xpath("//*[@id='www-wikipedia-org']/div[6]"));	
+		
 		List<WebElement> links = block.findElements(By.tagName("a"));
 		System.out.println(links.size());
 		System.out.println("----------Printing all links------------");

@@ -3,7 +3,7 @@ package seleniumbasics;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class seleniumFirstScript1 {
+public class seleniumFirstScript6 {
 
 	public static void main(String[] args) throws InterruptedException {
 	
